@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="unityads_example_app_name">UnityAds example</string>	
+    <string name="unityads_example_settings_image_description">Settings</string>
+    <string name="unityads_example_bacgkroundimage">Background</string>
+	<string name="unityads_example_developer_id">Developer ID</string>
+	<string name="unityads_example_options_id">Options ID</string>	
+	<string name="unityads_example_opentext">Open</string>
+	<string name="unityads_example_starttext">Start</string>	
+	<string name="unityads_example_helptextstart">Press \"Start\" or select additional options by pressing the Settings -icon.</string>
+	<string name="unityads_example_helptextloaded">Press \"Open\" to show Unity Ads.</string>
+	<string name="unityads_example_killapplication">Kill Application</string>
+	<string name="unityads_example_loadingstatus">Loading status</string>
+</resources>

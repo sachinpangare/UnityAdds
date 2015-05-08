@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/main">
+    
+    <ImageView android:layout_width="fill_parent" 
+        	   android:layout_height="fill_parent" 
+        	   android:src="@drawable/unityads_main"
+        	   android:scaleType="centerCrop" 
+        	   android:id="@+id/unityads_example_bg" 
+        	   android:contentDescription="@string/unityads_example_bacgkroundimage"/>
+    
+    <Button android:background="@drawable/shipselection"
+    		 android:id="@+id/unityads_example_startbutton" 
+    		 android:layout_alignParentBottom="true" 
+    		 android:layout_centerHorizontal="true"
+    		 android:layout_marginBottom="30dp"
+    		 android:layout_width="130dp" 
+        	 android:layout_height="45dp"
+        	 android:text="@string/unityads_example_starttext"
+        	 android:textColor="@android:color/white"
+        	 android:visibility="visible"/>
+    
+    <Button
+        android:id="@+id/unityads_example_openbutton"
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@+id/unityads_example_startbutton"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shipselection"
+        android:text="@string/unityads_example_opentext"
+        android:textColor="@android:color/white"
+        android:visibility="invisible" />
+    
+    <TextView android:width="240dp"
+              android:height="100dp"
+              android:gravity="center"
+              android:textColor="#50FFFFFF"
+              android:layout_centerInParent="true"
+              android:textSize="16sp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/unityads_example_helptextstart"
+              android:id="@+id/unityads_example_instructions"/>
+    
+	<ImageButton
+	    android:id="@+id/unityads_settings"
+	    android:layout_centerHorizontal="true"
+	    android:src="@drawable/unityads_settings"
+	    android:background="@color/unityads_example_settingsbutton_transparent"
+	    android:layout_width="45dp"
+	    android:layout_height="45dp"
+	    android:layout_toRightOf="@id/unityads_example_startbutton"
+	    android:layout_alignTop="@id/unityads_example_startbutton"
+	    android:scaleType="fitCenter"
+	    android:padding="0dp"
+	    android:layout_marginLeft="10dp"
+	    android:contentDescription="@string/unityads_example_settings_image_description"/>
+    
+    <RelativeLayout android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:padding="20dp"
+        			android:background="#90002040"
+        			android:layout_centerInParent="true"
+        			android:visibility="invisible"
+        			android:id="@+id/unityads_example_optionsview">
+        
+        <TextView android:text="@string/unityads_example_developer_id"
+            	  android:id="@+id/unityads_example_developeridheading"
+            	  android:width="200dp"
+            	  android:height="30dp"
+            	  android:gravity="center"
+            	  android:textColor="#FFFFFFFF"
+            	  android:layout_width="wrap_content"
+            	  android:layout_height="wrap_content"/>
+
+        <EditText android:text=""
+            	  android:width="180dp"
+            	  android:height="20dp"
+            	  android:layout_width="wrap_content"
+            	  android:layout_height="wrap_content"
+            	  android:layout_centerHorizontal="true"
+            	  android:inputType="textNoSuggestions"
+            	  android:layout_below="@id/unityads_example_developeridheading"
+            	  android:layout_marginTop="5dp"
+            	  android:id="@+id/unityads_example_developer_id_data"/>
+
+		<TextView android:text="@string/unityads_example_options_id"
+            	  android:id="@+id/unityads_example_optionsidheading"
+            	  android:width="200dp"
+            	  android:height="30dp"
+            	  android:gravity="center"
+            	  android:textColor="#FFFFFFFF"
+            	  android:layout_width="wrap_content"
+            	  android:layout_height="wrap_content"
+            	  android:layout_below="@id/unityads_example_developer_id_data"
+            	  android:layout_marginTop="15dp"/>
+
+        <EditText android:text=""
+            	  android:width="180dp"
+            	  android:height="20dp"
+            	  android:layout_width="wrap_content"
+            	  android:layout_height="wrap_content"
+            	  android:layout_centerHorizontal="true"
+            	  android:inputType="textNoSuggestions"
+            	  android:layout_below="@id/unityads_example_optionsidheading"
+            	  android:layout_marginTop="5dp"
+            	  android:id="@+id/options_id_data"/>
+        
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/unityads_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_above="@+id/unityads_example_startbutton"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/unityads_example_loadingstatus"
+        android:src="@drawable/unityads_loading"
+        android:visibility="invisible" />
+
+</RelativeLayout>
